@@ -1,8 +1,13 @@
 import Head from "next/head"
-import React, {FC} from "react"
-import {BlitzLayout} from "@blitzjs/next"
+import React from "react"
+import { BlitzLayout } from "@blitzjs/next"
+import { Box } from "@chakra-ui/react"
+import { Navbar } from "../components/Navbar"
 
-const Layout: BlitzLayout<{title?: string; children?: React.ReactNode}> = ({title, children}) => {
+const Layout: BlitzLayout<{ title?: string; children?: React.ReactNode }> = ({
+  title,
+  children,
+}) => {
   return (
     <>
       <Head>
@@ -10,7 +15,10 @@ const Layout: BlitzLayout<{title?: string; children?: React.ReactNode}> = ({titl
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {children}
+      <Navbar />
+      <Box as="main" py={4} px={8}>
+        {children}
+      </Box>
     </>
   )
 }
