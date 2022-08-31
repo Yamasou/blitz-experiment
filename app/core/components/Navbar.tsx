@@ -53,7 +53,11 @@ export const Navbar = () => {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-            <Box>Blitz experiment</Box>
+            <Box>
+              <NextLink href="/" passHref>
+                <Link>Blitz experiment</Link>
+              </NextLink>
+            </Box>
             <HStack as={"nav"} spacing={4} display={{ base: "none", md: "flex" }}>
               {Links.map((link) => (
                 <NavLink key={link.text} href={link.href?.().pathname || "#"}>
