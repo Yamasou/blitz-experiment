@@ -2,7 +2,9 @@
 
 This is a [Blitz.js](https://github.com/blitz-js/blitz) app.
 
-# ****name****
+# Blitz experiment
+
+[Blitz.js](https://github.com/blitz-js/blitz) を使用して簡単な web アプリを作りながら使用感を把握する。
 
 ## Getting Started
 
